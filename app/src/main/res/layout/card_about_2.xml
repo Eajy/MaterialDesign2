@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_about_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/dimen_common_small"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_card_about_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_common"
+            android:text="@string/about_card2_title"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_card_about_2_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE" />
+
+        <TextView
+            android:id="@+id/tv_card_about_2_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_shop_black_24dp"
+            android:drawablePadding="@dimen/dimen_common"
+            android:drawableTint="@color/gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_common"
+            android:text="@string/about_google_play"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_card_about_2_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="@dimen/dimen_common"
+            android:drawableTint="@color/gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_common"
+            android:text="@string/about_email"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_card_about_2_git_hub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_github"
+            android:drawablePadding="@dimen/dimen_common"
+            android:drawableTint="@color/gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_common"
+            android:text="@string/about_git_hub"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_card_about_2_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_web_black_24dp"
+            android:drawablePadding="@dimen/dimen_common"
+            android:drawableTint="@color/gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_common"
+            android:text="@string/about_website"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_card_about_source_licenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_copyright_black_24dp"
+            android:drawablePadding="@dimen/dimen_common"
+            android:drawableTint="@color/gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_common"
+            android:text="@string/about_source_licenses"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

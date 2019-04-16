@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/google_assistant_background"
+    android:paddingStart="@dimen/zero_margin_when_normal"
+    android:paddingEnd="@dimen/zero_margin_when_normal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bottom_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog_bottom_sheet_ok"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_bottom_dialog"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_common_very_small"
+            android:layout_marginBottom="@dimen/dimen_common_very_small"
+            android:text="@string/dialog_ok" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog_bottom_sheet_cancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_bottom_dialog"
+            android:layout_marginEnd="@dimen/dimen_common_very_small"
+            android:layout_marginBottom="@dimen/dimen_common_very_small"
+            android:layout_toStartOf="@+id/btn_dialog_bottom_sheet_ok"
+            android:text="@string/dialog_cancel" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

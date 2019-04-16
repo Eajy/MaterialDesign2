@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_recycler_and_swipe_refresh"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="@string/nav_recycler_view" />
+        <item
+            android:id="@+id/nav_scrolling"
+            android:icon="@drawable/ic_file_download_black_24dp"
+            android:title="@string/nav_scrolling" />
+        <item
+            android:id="@+id/nav_bottom_navigation"
+            android:icon="@drawable/ic_more_horiz_black_24dp"
+            android:title="@string/nav_bottom_navigation" />
+        <item
+            android:id="@+id/nav_bottom_appbar"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="@string/nav_bottom_appbar" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_settings" />
+    </group>
+
+    <group android:id="@+id/group_about">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/nav_about" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="@string/nav_donate" />
+        <item
+            android:id="@+id/nav_my_apps"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="@string/nav_my_apps" />
+    </group>
+
+    <!--<item android:title="Others">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_about"-->
+    <!--android:icon="@drawable/ic_info_outline_black_24dp"-->
+    <!--android:title="@string/nav_about" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_donate"-->
+    <!--android:icon="@drawable/ic_monetization_on_black_24dp"-->
+    <!--android:title="@string/nav_donate" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_my_apps"-->
+    <!--android:icon="@drawable/ic_apps_black_24dp"-->
+    <!--android:title="@string/nav_my_apps" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

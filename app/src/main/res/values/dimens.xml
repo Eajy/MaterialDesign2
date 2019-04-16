@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="dimen_common">16dp</dimen>
+    <dimen name="dimen_common_medium">12dp</dimen>
+    <dimen name="dimen_common_small">8dp</dimen>
+    <dimen name="dimen_common_very_small">4dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <dimen name="zero_margin_when_normal">0dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="app_bar_height_image_view">180dp</dimen>
+    <dimen name="big_activity_margin_vertical">96dp</dimen>
+
+    <dimen name="my_app_bar_height">128dp</dimen>
+    <dimen name="my_app_bar_overlap">56dp</dimen>
+
+</resources>

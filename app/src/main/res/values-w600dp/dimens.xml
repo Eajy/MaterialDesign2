@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="zero_margin_when_normal">64dp</dimen>
+    <dimen name="app_bar_height_image_view">300dp</dimen>
+    <dimen name="big_activity_margin_vertical">128dp</dimen>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_common"
+    android:layout_marginTop="@dimen/dimen_common_small"
+    android:layout_marginEnd="@dimen/dimen_common"
+    android:layout_marginBottom="@dimen/dimen_common_small"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:strokeColor="@color/colorAccent"
+    app:strokeWidth="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_card_3_title"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_common"
+            android:text="@string/main_card_with_stroke_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_card_3_action_1"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@id/tv_card_3_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_common"
+            android:layout_marginEnd="@dimen/dimen_common"
+            android:layout_marginBottom="@dimen/dimen_common_medium"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/main_card_button_2"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_card_3_action_2"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@id/tv_card_3_title"
+            android:layout_marginTop="@dimen/dimen_common"
+            android:layout_marginEnd="@dimen/dimen_common"
+            android:layout_marginBottom="@dimen/dimen_common_medium"
+            android:layout_toStartOf="@id/btn_card_3_action_1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/main_card_button_1" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
