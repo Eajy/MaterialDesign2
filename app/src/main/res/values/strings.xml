@@ -16,7 +16,7 @@
     <string name="nav_bottom_appbar">Bottom App Bar</string>
     <string name="nav_about">About</string>
     <string name="nav_donate">Donations</string>
-    <string name="main_feedback_email">Feedback:MaterialDesign</string>
+    <string name="main_feedback_email">Feedback:MaterialDesign2</string>
     <string name="main_not_found_email">Not found email app</string>
     <string name="nav_my_apps">My Apps</string>
 
@@ -204,7 +204,7 @@
     <!-- String related to About -->
     <string name="title_activity_about">About</string>
     <string name="about_version">Version: </string>
-    <string name="about_email_intent">About:MaterialDesign</string>
+    <string name="about_email_intent">Feedback:MaterialDesign2</string>
     <string name="about_not_found_email">Not found email app</string>
     <string name="about_card1_title">Material Design Demo</string>
     <string name="about_card1_message">Hey, glad to see you!</string>
@@ -219,4 +219,14 @@
     <!-- String related to Ad -->
     <string name="banner_ad_title">Advertise</string>
     <string name="banner_ad_loading">Ads loading …</string>
+
+    <!-- String related to Donate -->
+    <string name="activity_donate">Donations</string>
+    <string name="donate">Donate</string>
+    <string name="donated">Donated</string>
+    <string name="donate_title">I Would Be Very Grateful If You Could Donate Me ! </string>
+    <string name="donate_title_after">Thanks For Your Donations, I Am Very Grateful ! </string>
+    <string name="donate_low">1.99 USD</string>
+    <string name="donate_high">9.99 USD</string>
+    <string name="donate_exception">Sorry, can not do this!</string>
 </resources>

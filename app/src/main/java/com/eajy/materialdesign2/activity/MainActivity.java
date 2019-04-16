@@ -123,10 +123,10 @@ public class MainActivity extends AppCompatActivity
                 Intent aboutIntent = new Intent(this, AboutActivity.class);
                 startActivity(aboutIntent);
                 break;
-//            case R.id.action_menu_main_donate:
-//                Intent donateIntent = new Intent(this, DonateActivity.class);
-//                startActivity(donateIntent);
-//                break;
+            case R.id.action_menu_main_donate:
+                Intent donateIntent = new Intent(this, DonateActivity.class);
+                startActivity(donateIntent);
+                break;
             case R.id.action_menu_main_my_app:
                 Intent myAppsIntent = new Intent(this, MyAppsActivity.class);
                 startActivity(myAppsIntent);
@@ -164,10 +164,10 @@ public class MainActivity extends AppCompatActivity
                 intent.setClass(this, AboutActivity.class);
                 startActivity(intent);
                 break;
-//            case R.id.nav_donate:
-//                intent.setClass(this, DonateActivity.class);
-//                startActivity(intent);
-//                break;
+            case R.id.nav_donate:
+                intent.setClass(this, DonateActivity.class);
+                startActivity(intent);
+                break;
             case R.id.nav_my_apps:
                 intent.setClass(this, MyAppsActivity.class);
                 startActivity(intent);

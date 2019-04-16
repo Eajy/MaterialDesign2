@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_donate">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_common"
+        android:layout_marginBottom="@dimen/dimen_common"
+        android:paddingTop="@dimen/dimen_common"
+        android:paddingBottom="@dimen/dimen_common">
+
+        <RelativeLayout
+            android:id="@+id/relative_donate_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/zero_margin_when_normal"
+            android:layout_marginTop="@dimen/dimen_common"
+            android:layout_marginEnd="@dimen/zero_margin_when_normal"
+            android:layout_marginBottom="@dimen/dimen_common">
+
+            <ImageView
+                android:id="@+id/img_donate_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_common"
+                android:src="@drawable/ic_attach_money_black_24dp"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_donate_low"
+                android:padding="@dimen/dimen_common"
+                android:text="@string/donate_low"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_donate_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_common"
+                android:text="@string/donate" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_donate_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_donate_low"
+            android:layout_marginStart="@dimen/zero_margin_when_normal"
+            android:layout_marginTop="@dimen/dimen_common"
+            android:layout_marginEnd="@dimen/zero_margin_when_normal"
+            android:layout_marginBottom="100dp">
+
+            <ImageView
+                android:id="@+id/img_donate_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_common"
+                android:src="@drawable/ic_attach_money_black_24dp"
+                android:tint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_donate_high"
+                android:padding="@dimen/dimen_common"
+                android:text="@string/donate_high"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_donate_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_common"
+                android:text="@string/donate" />
+        </RelativeLayout>
+
+        <include layout="@layout/ad_banner_donate" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!--<uses-permission android:name="com.android.vending.BILLING" />-->
+    <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
         android:name=".App"
@@ -58,10 +58,15 @@
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".activity.DonateActivity"
+            android:label="@string/activity_donate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".activity.MyAppsActivity"
             android:label="@string/activity_my_apps"
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
