@@ -33,7 +33,7 @@ https://play.google.com/store/apps/details?id=com.eajy.materialdesign2
     http://www.apache.org/licenses/LICENSE-2.0  
       
     Material Components Android  
-    Copyright © 2015 The Android Open Source Project. All rights reserved. 
+    Copyright © 2017 The Android Open Source Project. All rights reserved. 
     https://material.io/develop/android/  
       
     Glide  
