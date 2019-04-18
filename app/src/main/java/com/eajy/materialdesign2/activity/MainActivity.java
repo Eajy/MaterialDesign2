@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity
         View headerView = navigationView.getHeaderView(0);
         LinearLayout nav_header = headerView.findViewById(R.id.nav_header);
         nav_header.setOnClickListener(this);
+        fab = findViewById(R.id.fab_main);
+        fab.setOnClickListener(this);
 
         TabLayout mTabLayout = findViewById(R.id.tab_layout_main);
         ViewPager mViewPager = findViewById(R.id.view_pager_main);
@@ -75,9 +77,6 @@ public class MainActivity extends AppCompatActivity
         mViewPager.setAdapter(mFragmentAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
         mViewPager.addOnPageChangeListener(pageChangeListener);
-
-        fab = findViewById(R.id.fab_main);
-        fab.setOnClickListener(this);
     }
 
     private ViewPager.OnPageChangeListener pageChangeListener = new ViewPager.OnPageChangeListener() {

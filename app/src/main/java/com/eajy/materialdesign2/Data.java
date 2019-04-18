@@ -24,7 +24,7 @@ public class Data {
         model6.setDescription("A beautiful app designed with Material Design 2.");
         model6.setPackageName("com.eajy.materialdesign2");
         model6.setGooglePlayUrl("https://play.google.com/store/apps/details?id=com.eajy.materialdesign2");
-        model6.setImageUrl("material_design_5");
+        model6.setImageUrl("material_design_2");
         if (!model6.getPackageName().equals(BuildConfig.APPLICATION_ID))
             lists.add(model6);
 
