@@ -15,6 +15,14 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.core.widget.NestedScrollView;
+import androidx.fragment.app.Fragment;
+
 import com.bumptech.glide.Glide;
 import com.eajy.materialdesign2.App;
 import com.eajy.materialdesign2.R;
@@ -25,14 +33,6 @@ import com.google.android.material.button.MaterialButton;
 
 import java.text.DateFormat;
 import java.util.Calendar;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.widget.PopupMenu;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-import androidx.core.widget.NestedScrollView;
-import androidx.fragment.app.Fragment;
 
 import static android.content.Context.MODE_PRIVATE;
 

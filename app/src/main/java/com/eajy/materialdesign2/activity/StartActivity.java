@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 
-import com.eajy.materialdesign2.R;
-
 import androidx.annotation.Nullable;
+
+import com.eajy.materialdesign2.R;
 
 /**
  * Created by zhangxiao on 2019/4/3
@@ -32,7 +32,7 @@ public class StartActivity extends BaseActivity {
         super.onStop();
     }
 
-    CountDownTimer countDownTimer = new CountDownTimer(600, 600) {
+    CountDownTimer countDownTimer = new CountDownTimer(500, 500) {
         @Override
         public void onTick(long millisUntilFinished) {
 
