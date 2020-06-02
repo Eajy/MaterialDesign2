@@ -16,7 +16,24 @@
 
         <include layout="@layout/card_2" />
 
-        <include layout="@layout/ad_banner_main_card" />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_ad_card_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dimen_common"
+            android:layout_marginTop="@dimen/dimen_common_small"
+            android:layout_marginEnd="@dimen/dimen_common"
+            android:layout_marginBottom="@dimen/dimen_common_small"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:id="@+id/frame_native_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--<include layout="@layout/ad_banner_main_card" />-->
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

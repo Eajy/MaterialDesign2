@@ -12,20 +12,25 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
-import com.eajy.materialdesign2.R;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.material.snackbar.Snackbar;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.eajy.materialdesign2.R;
+import com.google.android.gms.ads.AdLoader;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.formats.MediaView;
+import com.google.android.gms.ads.formats.UnifiedNativeAdView;
+import com.google.android.material.snackbar.Snackbar;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -39,11 +44,12 @@ public class CardsFragment extends Fragment implements View.OnClickListener, Vie
     private Button btn_card_1_action1, btn_card_1_action2, btn_card_3_action_1, btn_card_3_action_2;
     private AdView ad_view_card;
     private CardView card_ad_card;
+    private NestedScrollView nestedScrollView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        NestedScrollView nestedScrollView = (NestedScrollView) inflater.inflate(R.layout.fragment_cards, container, false);
+        nestedScrollView = (NestedScrollView) inflater.inflate(R.layout.fragment_cards, container, false);
         card__1 = nestedScrollView.findViewById(R.id.card_1);
         card__2 = nestedScrollView.findViewById(R.id.card_2);
         card__3 = nestedScrollView.findViewById(R.id.card_3);
@@ -115,17 +121,44 @@ public class CardsFragment extends Fragment implements View.OnClickListener, Vie
         try {
             SharedPreferences sharedPreferences = getContext().getSharedPreferences("app", MODE_PRIVATE);
             if (!sharedPreferences.getBoolean("isDonated", false)) {
-                AdRequest adRequest = new AdRequest.Builder().build();
-                ad_view_card.loadAd(adRequest);
-
-                Animation animation = new AlphaAnimation(0.0f, 1.0f);
-                animation.setDuration(500);
-                card_ad_card.setVisibility(View.VISIBLE);
-                card_ad_card.startAnimation(animation);
+                // showBannerAd();
+                showNativeAd();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void showBannerAd() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+        ad_view_card.loadAd(adRequest);
+
+        Animation animation = new AlphaAnimation(0.0f, 1.0f);
+        animation.setDuration(500);
+        card_ad_card.setVisibility(View.VISIBLE);
+        card_ad_card.startAnimation(animation);
+    }
+
+    private void showNativeAd() {
+        AdLoader adLoader = new AdLoader.Builder(getContext(), getString(R.string.native_ad_unit_id_main_card))
+                .forUnifiedNativeAd(unifiedNativeAd -> {
+                    FrameLayout parent = nestedScrollView.findViewById(R.id.frame_native_ad);
+                    UnifiedNativeAdView adView = (UnifiedNativeAdView) getLayoutInflater().inflate(R.layout.ad_native_main_card, null);
+
+                    TextView headlineView = adView.findViewById(R.id.ad_headline);
+                    headlineView.setText(unifiedNativeAd.getHeadline());
+                    adView.setHeadlineView(headlineView);
+                    ImageView iconView = adView.findViewById(R.id.ad_app_icon);
+                    adView.setIconView(iconView);
+                    MediaView mediaView = adView.findViewById(R.id.ad_media);
+                    adView.setMediaView(mediaView);
+                    adView.setNativeAd(unifiedNativeAd);
+
+                    parent.removeAllViews();
+                    parent.addView(adView);
+                })
+                .build();
+        adLoader.loadAd(new AdRequest.Builder().build());
     }
 
 }
