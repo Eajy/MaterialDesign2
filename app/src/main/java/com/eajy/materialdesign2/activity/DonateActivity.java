@@ -2,9 +2,9 @@ package com.eajy.materialdesign2.activity;
 
 import android.os.Bundle;
 
-import com.eajy.materialdesign2.R;
-
 import androidx.appcompat.widget.Toolbar;
+
+import com.eajy.materialdesign2.R;
 
 public class DonateActivity extends BaseActivity {
 
@@ -17,7 +17,10 @@ public class DonateActivity extends BaseActivity {
 
     private void initView() {
         Toolbar toolbar = findViewById(R.id.toolbar_donate);
-        setToolbar(toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 }
