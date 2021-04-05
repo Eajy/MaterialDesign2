@@ -15,13 +15,12 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout_main"
-            style="@style/Widget.MaterialComponents.TabLayout.Colored"
+            style="@style/Widget.MaterialComponents.TabLayout.PrimarySurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

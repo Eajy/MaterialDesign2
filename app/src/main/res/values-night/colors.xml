@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <color name="colorPrimary">#4285F4</color>-->
+    <color name="colorPrimaryDark">#181818</color>
+<!--    <color name="colorAccent">#FFC400</color>-->
+<!--    <color name="colorOnPrimary">@color/white</color>-->
+<!--    <color name="colorSecondary">@color/colorAccent</color>-->
+<!--    <color name="colorOnSecondary">@color/white</color>-->
+
+    <color name="background_color">#181818</color>
+
+</resources>
